@@ -1,6 +1,5 @@
 
-
-//? Normal function 
+// ? Normal function 
 
 // --> access and declare can be any place no issue
 
