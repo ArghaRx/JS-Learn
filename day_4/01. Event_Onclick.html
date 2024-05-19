@@ -1,0 +1,90 @@
+<!-- Event 
+
+
+
+
+     1.Onclick Event     
+
+
+  / There are three type-    i. inline process ,   ii. Dom event handeler  iii. Add event Listener   **// -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <h3>Inline Process</h3>
+    <button onclick="alert('Button clicked!')" class="but1">Click me</button>
+    <button ondblclick="alert('Button clicked!')" class="but2">Click me</button>
+    <button onmouseover="alert('Button clicked!')" class="but3">Click me</button>
+</body>
+</html> -->
+
+
+
+
+<!-- 2.  Dom Event handeler -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="event.css" />
+  </head>
+  <body>
+    <h3>Dom Event handeler</h3>
+    <button id="myButton1" class="but1">Click me 1</button>
+    <button id="myButton2" class="but2">Click me 2</button>
+    <button id="myButton3" class="but3">Click me 2</button>
+
+    <script>
+      document.getElementById("myButton1").onclick = function () {
+        alert("Dom event by JavaScript");
+      };
+      document.getElementById("myButton2").ondblclick = function () {
+        alert("heeyyyy");
+      };
+      document.getElementById("myButton3").onmousemove = function () {
+        alert("OKKkkkkkkk")
+      }
+    </script>
+  </body>
+</html> -->
+
+
+
+
+
+
+<!-- 3. Add Event Listener -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="event.css">
+</head>
+<body>
+  <h3>Add Event Listener</h3>
+    <button id="myButton1" class="but1">Click me 1</button>
+    <button id="myButton2" class="but2">Click me 2</button>
+    <button id="myButton3" class="but3"> Click me 3</button>
+
+
+    <script>
+      // in add event listener
+      // we neeed to pass (type, call function())
+      document.getElementById("myButton1").addEventListener('click', function() {alert("abcg=dfghd")})
+      document.getElementById("myButton2").addEventListener('mouseover', () => {alert("ami valo achi")})
+      document.getElementById("myButton3").addEventListener('dblclick', () => {alert("ami valo achi")})
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+/* .but1, .but2, .but3{
+    margin-left: 20px;
+    border-radius: 30px;
+    
+
+    background-color: rgb(26, 138, 203);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1s, color 0s; /* Smooth transition for color changes */
+/* } */
+
+ /* .but1:hover {
+    background-color: rgb(170, 202, 96);
+    color: rgb(118, 28, 28);
+} 
+.but2:hover {
+    background-color: rgb(170, 202, 96);
+    color: rgb(118, 28, 28);
+} 
+.but3:hover {
+    background-color: rgb(170, 202, 96);
+    color: rgb(118, 28, 28);
+}  */
+/* ------------------------------------------------- */
+
+
+.rectangle {
+    height: 30px;
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 1px; /* Initial border radius */
+    background-color: yellow;
+}
