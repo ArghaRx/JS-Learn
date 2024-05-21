@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create div in script</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = "main";
+    div.id = "my-id"; //string val
+    // div.id = Math.round(Math.random() * 10 + 1); // number set
+
+    //custom attribute set
+    div.setAttribute("title", "my-tile");
+
+    //style
+    div.style.backgroundColor = 'green';
+    div.style.padding = '10px';
+
+    //// text add   2 way to add
+    div.innerText = "helloooooo";
+
+    const addtext = document.createTextNode(" everyone");
+    div.appendChild(addtext);
+
+
+    // show in window
+    document.body.append(div)
+
+</script>
+</html>
