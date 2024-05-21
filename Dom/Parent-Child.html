@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Child Relationship</title>
+</head>
+<body style="background: black; color: white;">
+    <div class="parent">
+        <div class="child">Monday</div>
+        <div class="child">Tuesday</div>
+        <div class="child">Wednesday</div>
+        <div class="child">Thursday</div>
+    </div>
+</body>
+
+<script>
+    //Parent name
+    const parentName = document.querySelector('.parent')
+    // console.log(parent)  // output all parent
+
+    //get children name
+    // console.log(parentName.children)   // HTMLCollection(4)
+                                       // here parentName.children is an array
+    
+    
+    // acess different element of array                                   // console.log(parentName.children[2]);                           
+    // console.log(parentName.children[0]);                                   
+    // console.log(parentName.children[3]);  
+
+    //find only the value of array
+    // console.log(parentName.children[1].innerHTML)
+    // console.log(parentName.children[2].innerHTML)
+
+
+    // count how many elements present in array 
+    // console.log(parentName.childElementCount)
+
+
+    //loop and acceaa
+    // for (let i = 0; i < parentName.children.length; i++) {
+    //     console.log(parentName.children[i].innerHTML);
+        
+    // }
+
+
+    //style
+    // parentName.children[1].style.color = 'green'
+    // parentName.children[0].style.color = 'blue'
+    // parentName.children[3].style.color = 'green'
+    // parentName.children[2].style.color = 'orange'
+
+
+    // firstElementChild & lastElementChild
+    // console.log(parentName.firstElementChild);
+    // console.log(parentName.lastElementChild);
+
+
+
+
+
+    // child to parent move
+
+    //get first child
+    // const childOne = document.querySelector('.child');
+    // console.log(childOne);
+    // console.log(childOne.parentElement);     // get parent name
+    // console.log(childOne.nextElementSibling);  // get next child name 
+    // console.log(childOne.nodeType) // comes the number in output
+    // console.log(childOne.nodeName) // comes string:DIV in output
+
+
+    // console.log(parentName.childNodes) // return the complex tree structure ---> here it comes 9
+
+
+</script>
+    
+</html>
