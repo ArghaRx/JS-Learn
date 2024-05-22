@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom | create by function</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Java</li>
+        <li>C</li>
+    </ul>
+</body>
+
+<!-- <script>
+    1.. WAY__ due to use li.innerHTML we have to traverse the tree so it'll more complex
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("C++");
+
+</script> -->
+
+ <!-- 2Nd WAY___-->
+ <script>
+    function addLanguage(langName){
+        const li = document.createElement('li')  // create a tag li
+        li.appendChild(document.createTextNode(langName)) // create by the langName(parameter) and append in list
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('Jango')
+    addLanguage('C#')
+
+    //___________edit_____________________________________
+    const secondLan = document.querySelector('li:nth-child(2)')  // select the second li name 
+    // 1st way
+    // secondLan.innerHTML = "Hello"
+
+    //2nd way
+    const li = document.createElement('li')  // create a li tag
+    li.textContent = "Mojo"  // add content in new tag li
+    secondLan.replaceWith(li)  // replace it
+    
+
+
+
+
+</script> 
+
+</html>
