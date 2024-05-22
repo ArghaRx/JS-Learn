@@ -1,0 +1,38 @@
+body{
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+.button{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    margin-left: 15px;
+    
+}
+#white{
+    background-color: #fff;
+}
+#grey{
+    background-color: grey;
+}
+#yellow{
+    background-color: yellow;
+}
+#black{
+    background-color: #212121;
+}
+#green{
+    background-color: green;
+}
+#sky{
+    background-color: skyblue;
+}
+h2{
+    text-decoration: underline;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
