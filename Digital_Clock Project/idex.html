@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock Show</title>
+</head>
+<style>
+    body{
+        background-color: #e8dfdf;
+        /* background-color: black; */
+        text-align: center;
+        padding: 30px;
+    }
+    p{
+        font-weight: 600;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       
+        
+    }
+    #clock{
+        height: 30px;
+        width: 150px;
+        background-color: gold;
+        margin-left: 315px;
+        border: 2px solid red;
+        padding-top: 8px;
+        border-radius: 20px ;
+        font-weight: 600;
+        margin-top: 10px;
+        display: none;
+    }
+    #date{
+        height: 20px;
+        width: 90px;
+        background-color: rgb(55, 167, 163);
+        margin-left: 345px;
+        margin-top: 10px;
+        border: 2px solid yellow;
+        padding-top: 8px;
+        border-radius: 20px ;
+        font-size: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        display: none;
+    }
+    #button{
+        background-color: rgb(0, 123, 255);
+        height: 25px;
+        width: 70px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        margin-left: 10px;
+        /* margin-top: 20px; */
+        /* margin: 5px; */
+        /* margin-bottom: 12px; */
+        
+    }
+    .img{
+        height: 22px;
+        width: 24px;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <p>To know Time and Date Please <button id="button"> <img src="a.png" alt="" class="img"></button></p>
+        
+        <div id="clock"></div>
+        <div id="date"></div>
+    </div>
+    
+</body>
+<script src="clock.js"></script>
+</html>
