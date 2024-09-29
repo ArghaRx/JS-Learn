@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of two number</title>
+
+    <script>
+        function show() {
+            var num1 = document.getElementById("first").value;
+            var num2 = document.getElementById("second").value;
+            var sum = parseInt(num1) + parseInt(num2);
+
+            document.getElementById("res").value = sum;
+        }
+
+    </script>
+</head>
+<body >
+    Enter first number <input id = "first">
+    Enter second number <input id = "second">
+    <button onclick="show()">Click me</button>
+    Result is <input id = "res" readonly>
+
+
+     
+</body>
+</html>
